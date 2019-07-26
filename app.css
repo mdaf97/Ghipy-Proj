@@ -2,13 +2,23 @@ body{
     padding: 50px;
     background-image: url("backg.jpg");
 }
-}
 
 #thumbs{
     margin-left: -6px;
     margin-right: -6px;
 }
 
+#searchButton {
+	color: #fed136;
+}
+
+#searchButton:active:after {
+  color: #FFFFFF;
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
 .img-wrapper{
     display: table;
     height: 140px;
@@ -162,9 +172,6 @@ body{
 		top: 34px;
 }
 
-
-
-
 @keyframes cssload-spin {
 		0%, 15% {
 		transform: rotate(0);
@@ -219,3 +226,23 @@ body{
 		transform: rotate(360deg);
 	}
 }
+
+#TrendingText {
+font-family: Impact, Charcoal, sans-serif;
+font-size: 18px;
+text-align: center;
+letter-spacing: 2px;
+word-spacing: 0px;
+color: #FFFFFF;
+font-weight: normal;
+text-decoration: none solid rgb(68, 68, 68);
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase; }
+
+#navbar {
+  color: #fed136;
+  font-size: 20px;
+  font-family: 'Kaushan Script', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+

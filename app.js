@@ -38,18 +38,11 @@
     const result = await giphySearch(keyword);
     $('#thumbs').html('');
     showLoader();
-    // let loadedImageCount = 0;
     let promises = [];
     result.data.forEach(gif => {
       let img = new Image();
       img.src = gif.images.original.url;
       promises.push(onImgLoad(img));
-      // img.onload = () => {
-      //   loadedImageCount++;
-      //   if (loadedImageCount === result.data.length){
-      //     hideLoader()
-      //   }
-      // };
       appendImage(img);
     });
 
@@ -70,7 +63,7 @@ window.onload=function getTrendingData() {
       var _tenGifs = document.getElementById("tenGifs");
     //  document.querySelector("#gif1").setAttribute("src", giphyLink);
       if (res.data.length < 10) return; // if not ten quit for now
-      for(let i=0; i< 10 ;i++) {
+      for(let i=0; i< 12 ;i++) {
         // add 10 gifs by appending new elements to the div #tenGifs
         var node = document.getElementById("gif~"+i);      
         node.setAttribute("src", res.data[i].images.fixed_width.url);
