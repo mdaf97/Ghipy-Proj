@@ -88,3 +88,8 @@ $('#return-to-top').click(function() {      // When arrow is clicked
         scrollTop : 0                       // Scroll to top of body
     }, 500);
 });
+
+// ===== Removes trending gifs after search ==== 
+function myFunction() {
+  document.getElementById("tenGifs").style.visibility = "hidden";
+}
