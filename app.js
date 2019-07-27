@@ -93,3 +93,7 @@ $('#return-to-top').click(function() {      // When arrow is clicked
 function myFunction() {
   document.getElementById("tenGifs").style.visibility = "hidden";
 }
+
+function goBack() {
+  window.history.back()
+}
