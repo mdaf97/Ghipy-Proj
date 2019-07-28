@@ -1,6 +1,6 @@
 # Ghipy-Proj
 
-Responsive web app using Giphy Api
+Responsive web app using Giphy Api.
 
 This web app uses a search input and Giphy's API to display gifs on a page.
 
