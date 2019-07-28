@@ -232,7 +232,7 @@ body{
 }
 
 #TrendingText {
-	font-family: Impact, Charcoal, sans-serif;
+	font-family: 'Noto Color Emoji';
 	font-size: 18px;
 	text-align: center;
 	letter-spacing: 2px;
@@ -292,4 +292,3 @@ body{
     color: #fff;
     top: 5px;
 }
-
