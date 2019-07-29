@@ -1,15 +1,17 @@
 body{
     padding: 50px;
-    background-image: url("backg.jpg");
+    background-image: url("../img/backg.jpg");
 }
 
 #thumbs{
     margin-left: -6px;
     margin-right: -6px;
+	padding-top: 5px;
 }
 
 #searchButton {
 	color: #fed136;
+	border: 0.5px solid #FFFFFF;
 }
 
 #searchButton:active:after {
@@ -291,4 +293,47 @@ body{
 #return-to-top:hover i {
     color: #fff;
     top: 5px;
+}
+
+#backbdiv {
+	text-align: center;
+}
+
+#backb {
+	background-color: #000000;
+	border-radius: 4px;
+	border: 0.5px solid #FFFFFF;
+	color: #fed136;
+}
+
+
+
+@media (max-width: 375px) {
+	#thumbs {
+		padding-left: 25px;
+      }
+	  
+	#tenGifs {
+		padding-left: 35px;
+	}
+	
+	#TrendingText {
+		padding-right: 25px;
+	}
+	
+}
+
+@media (max-width: 414px) {
+	#thumbs {
+		padding-left: 25px;
+      }
+	  
+	#tenGifs {
+		padding-left: 50px;
+	}
+	
+	#TrendingText {
+		padding-right: 50px;
+	}
+	
 }

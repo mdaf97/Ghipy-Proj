@@ -1,9 +1,10 @@
 (function () {
   function giphySearch(keyword) {
+	document.getElementById("backb").style.visibility = "visible";
     return fetch(`http://api.giphy.com/v1/gifs/search?q=${keyword}&api_key=${GIPHY_KEY}&limit=10`)
       .then(response => response.json());
   }
- 
+
   function appendImage(img) {
     let $div = $('<div class="img-wrapper"></div>');
     $('<div class="inner"></div>').append(img).appendTo($div);
@@ -25,6 +26,7 @@
   }
 
   (function listenOnFormSubmit() {
+	document.getElementById("backb").style.visibility = "visible";
     $('#searchForm').submit(async (ev) => {
       ev.preventDefault();
 
@@ -52,6 +54,7 @@
 })();
 
 window.onload=function getTrendingData() {
+  document.getElementById("backb").style.visibility = "hidden";
   var url =
     "https://api.giphy.com/v1/gifs/trending?api_key=y4h5ShwxLHh3XvkZBKAl0NVd7BH7tBuC";
 
@@ -94,6 +97,7 @@ function myFunction() {
   document.getElementById("tenGifs").style.visibility = "hidden";
 }
 
-function goBack() {
-  window.history.back()
-}
+function refreshPage(){
+    window.location.reload();
+	document.getElementById("backb").style.visibility = "hidden";
+} 
